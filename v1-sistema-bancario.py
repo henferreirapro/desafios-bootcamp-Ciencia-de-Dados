@@ -25,7 +25,7 @@ while True:
           saldo += valor_deposito
 
           # add deposito em extrato
-          extrato += f"Depósito de R$ {valor_deposito:.2f}.\n"
+          extrato += f"    Depósito de R$ {valor_deposito:.2f}.\n"
         else:
           print("Valor é Negativo, por favor adicione apenas Valores Positivos")
 
@@ -43,7 +43,7 @@ while True:
             saldo -= valor_saque
             
             # add saque em extrato
-            extrato += f"Saque de R$ {valor_saque:.2f}.\n"
+            extrato += f"    Saque de R$ {valor_saque:.2f}.\n"
 
           # Caso seja um saldo negativo. 
           elif valor_saque < 0:
@@ -63,9 +63,10 @@ while True:
       if extrato == "":
           print("Você ainda não possui movimentações na conta!")
       else:
+        print("==========EXTRATO DA CONTA========\n")
         print(extrato)
-        print(f"Seu Saldo Atual é de:\n {saldo}")
-
+        print(f"Seu Saldo Atual é de: R$ {saldo:.2f}")
+        print("==================================")
     # Sair
     elif opcao == 0:
       print("Saindo da sessão... \nMuito obrigado por usar o nosso sistema, volte sempre! :)")
