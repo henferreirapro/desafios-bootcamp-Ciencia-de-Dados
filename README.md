@@ -25,6 +25,7 @@ ___
 
   - Sugestão de retorno: saldo e extrato.
 
+___
 <h3>Extrato:</h3>
 
   - A função extrato deve receber os argumentos por posição e nome (positional only e keyword only).
@@ -33,3 +34,15 @@ ___
 
   - Sugestão de Argumentos nomeados: extrato.
 
+___
+<h3>Criar Usuário:</h3>
+
+  - O programa deve armazenas usuários em uma lista.
+
+  - Dados do usuário devem conter: nome, data de nascimento, CPF e endereço.
+
+  - O endereço deve conter: logradouro, número, bairro - sigla do estado.
+
+  - Não pode ser cadastrado 2 usuários com mesmo CPF, então precisamos de um filtro para verificar se já existe um usuário com CPF informado.
+
+  
